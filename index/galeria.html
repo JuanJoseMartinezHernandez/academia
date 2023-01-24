@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+  < <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+  <title>Martell Studio</title>
+  <link rel="stylesheet" href="/academia/styles/style.css">
+  <link rel="shortcut icon" type="image/x-ico" href="/academia/icinos/logo.png">
+
+  <link rel="stylesheet" href="/academia/styles/swiper-bundle.min.css">
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+     
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head> 
+<header>
+          <div class="inicio">
+      
+          <img class="logo" src="/academia/icinos/logo.png" alt="logo academia">
+              <div class="boton">		
+              <button class="home"  >
+                  <a  href="index.html">
+                  Inicio  
+                  </a>
+              </button>
+              <span></span>
+              <span></span>
+              </div>
+          </div>
+      
+
+      <nav class="barraNavegacion">
+          <div class="navegador" >
+              <div class= "outer contacto">
+
+              <a class="contacto" href="galeria.html">
+                  <button>
+                      Eventos
+                  </button>
+                  </a>
+                  <span></span>
+                  <span></span>
+
+              </div>
+          
+              
+          <div class="outer historia ">
+              <a class="Historia" href="historia.html">
+                <button>
+                  Historia
+                </button>
+                </a>
+                <span></span>
+                <span></span>
+              
+          </div>
+              <div class="outer anecdotas">
+              <a href="anecdotas.html">
+                  <button>
+                      Anecdotas
+                  </button>
+                  </a>
+                  <span></span>
+                  <span></span>
+              
+              </div>
+          <div class="outer instructores">
+              <a href="instructores.html">
+                  <button>
+                      Instructores
+                  </button>
+              </a>
+                  <span></span>
+                  <span></span>
+              
+              </div>
+          </div>
+
+      
+
+  </nav>
+</header>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia20.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia11.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia13.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia14.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia12.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia15.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia16.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia17.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia18.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/academia/imagenes/evento/academia19.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia 2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia9.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/academia/imagenes/evento/academia10.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="/academia/js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+
+</html>

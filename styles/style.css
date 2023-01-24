@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ font-family:"Gill Sans";
+
+
+}
+.nombre {    display: flex;
+	justify-content: center;
+	position: relative;
+	top: 50px;
+	color: red;
+	font-family: 'Limelight', cursive;
+	font-size: 45PX;
+	
+
+}
+
+
+header{
+	
+	height: 50px;
+       display: flex;
+	
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 10px;
+	transform: translate(10px);
+
+      }
+
+header div {
+	align-items: center;
+	display: flex;
+
+	
+
+	}
+body{
+background: black;
+}
+
+.logo{
+       height: 70px;
+       align-items: center;
+      
+       border-radius: 50px;
+
+      }
+
+
+ .logo:hover{
+
+ box-shadow: 1px 1px 40px white;
+ }
+
+a   	{
+	text-decoration: none;
+	color: white;
+	
+	
+
+
+	}
+
+
+.inicio{
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+
+}
+.boton{
+
+       display: flex;
+	align-items: center;
+	text-align: center;
+	
+
+}
+.boton{
+ 	position: relative;
+       margin: 0, 50px;
+	background: linear-gradient(#00d4ff, #0e0979, #00d4ff);
+	margin-top: 5px;
+	margin-left: 90px;
+
+
+}
+.boton button{
+background: black;/* color de fondo negro  */
+color: white;/*  color de la letra blanco */
+outline: none; /*sin linea*/
+border: none; /*sin bordes*/
+font-size: 30px; /* tamaño de la letra */
+text-transform: none;/* verificar documentacion */
+
+cursor: pointer; /*cuando se acercas el puntero del mause cambia a una mano*/
+z-index: 9;
+margin-top: 18px;
+margin-left: 40px;
+}
+
+.boton{
+
+width: 130px;
+height: 60px;
+border-radius: 50px;
+
+
+
+}
+ .boton button, .boton span{
+
+ 	position: absolute;
+	top: 20%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	margin-top: 18px;
+	margin-left: 40px;
+
+
+ }
+.boton button{
+	height: 56px;
+	width: 120px;
+	border-radius: 50px;
+
+
+}
+
+
+.boton span{
+
+height: 100%;
+width: 100%;
+background: inherit;
+border-radius: 50px;.
+
+
+
+}
+
+
+.boton:hover span:nth-child(1) {
+	filter: blur(10px);
+
+
+}
+.boton:hover span:nth-child(2) {
+	filter: blur(14px);
+
+
+}
+.boton {
+	animation: rotate 1.5s linear infinite;
+
+}
+
+@keyframes rotate{
+
+100%{filter: hue-rotate(360deg);
+
+
+}
+}
+
+.barraNavegacion{
+
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+}
+
+.outer {
+position: relative;
+margin: 0, 50px;
+background: linear-gradient(#00d4ff, #0e0979, #00d4ff);
+justify-content:center ;
+margin-left: 20px;
+
+}
+.contacto, .anecdotas, .historia, .instructores{
+	height: 60px;
+
+	width: 160px;
+	border-radius: 50px;
+
+
+}
+
+.outer button, .outer span{
+
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.outer button{
+
+	background: black;/* color de fondo negro  */
+color: white;/*  color de la letra blanco */
+outline: none; /*sin linea*/
+border: none; /*sin bordes*/
+font-size: 30px; /* tamaño de la letra */
+text-transform: none;/* verificar documentacion */
+
+cursor: pointer; /*cuando se acercas el puntero del mause cambia a una mano*/
+z-index: 9;
+width: 160px;
+height: 55px;
+
+}
+
+
+
+
+
+.contacto, .anecdotas, .historia, .instructores, button{
+
+
+width: 170px;
+height: 60px;
+border-radius: 50px;
+
+
+}
+
+.outer span{
+
+ 	height: 100%;
+	width: 100%;
+	background: inherit;
+
+}
+
+.contacto, .anecdotas, .historia, .instructores, span{
+	border-radius: 50px;
+
+}
+
+.outer:hover span:nth-child(1)  {
+
+	filter: blur(7px);
+}
+.outer:hover span:nth-child(2)
+{
+filter: blur(20px);
+
+}
+
+.outer{
+animation: rotacion linear 1.5s infinite;
+}
+
+@keyframes rotacion{
+
+0%{
+filter: hue-rotate(00deg);
+}
+
+100%{
+filter: hue-rotate(360deg);
+}
+
+
+}
+
+body img{
+	
+    
+top: 100px;
+
+
+
+}
+
+
+body div  .contenedor  
+{	
+	
+	display: flex;
+	min-width: 100vh;
+	margin: 0;
+      
+       position: absolute;
+
+}
+
+
+.contenedor 
+{
+	margin-left: 550px;
+position: relative;
+width: 200px;
+height: 200px;
+transform-style: preserve-3d;
+animation: animacion 30s linear infinite;
+}
+
+@keyframes animacion
+
+{
+
+	from{
+		transform: perspective(1000px) rotateY(0deg) ;
+	}
+
+	to{
+		transform: perspective(1000px) rotateY(360deg) ;
+	}
+}
+
+
+.contenedor span
+{
+
+position: absolute;
+
+width: 100%;
+height: 100%;
+transform-origin: center;
+transform-style: preserve-3d;
+transform: rotateY(calc(var(--i)* 45deg )) translateZ(400px);
+
+
+}
+
+
+.contenedor span img
+{
+
+-webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+position: absolute;
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+section
+{
+
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+top: -200px;
+
+}
+
+.esenario
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0;
+	pointer-events: none;
+
+
+
+}
+
+section .esenario div
+{
+
+position: absolute;
+display: block;
+
+}
+section .esenario div:nth-child(1)
+{
+
+left: 20%;
+animation: caida 15s linear infinite;
+animation-delay: -7s;
+
+}
+section .esenario div:nth-child(2)
+{
+
+left: 50%;
+animation: caida 20s linear infinite;
+animation-delay: -5s;
+
+}
+
+section .esenario div:nth-child(3)
+{
+
+left: 70%;
+animation: caida 20s linear infinite;
+animation-delay: 0s;
+
+}
+
+section .esenario div:nth-child(4)
+{
+
+left: 80%;
+animation: caida 15s linear infinite;
+animation-delay: -5s;
+
+}
+section .esenario div:nth-child(5)
+{
+
+left: 95%;
+animation: caida 18s linear infinite;
+animation-delay: -10s;
+
+}
+
+section .esenario div:nth-child(6)
+{
+
+left: 0%;
+animation: caida 15s linear infinite;
+
+
+}
+section .esenario div:nth-child(7)
+{
+
+left: 15%;
+animation: caida 14s linear infinite;
+
+
+}
+section .esenario div:nth-child(8)
+{
+
+left: 25%;
+animation: caida 12s linear infinite;
+
+
+}
+
+section .esenario div:nth-child(9)
+{
+
+left: 35%;
+animation: caida 8s linear infinite;
+
+}
+
+section .esenario div:nth-child(10)
+{
+
+left: 45%;
+animation: caida 15s linear infinite;
+
+
+}
+
+@keyframes caida
+{
+0%
+{
+opacity: 0;
+top: -10%;
+transform: translateX(20px) rotate(0deg);
+
+}
+10%
+{
+opacity: 1;
+}
+
+20%
+{
+transform: translateX(-20px) rotate(45deg);
+}
+40%
+
+{
+transform: translateX(-20px) rotate(90deg);
+}
+
+60%
+{
+
+transform: translateX(20px) rotate(180deg);
+
+}
+
+80%
+{
+transform: translateX(-20px) rotate(180deg);
+}
+
+100%
+{
+top: 110%;
+transform: translateX(-20px) rotate(225deg);
+
+}
+}
+
+.esenario2
+{
+transform: scale(2) rotateY(180deg);
+filter: blur(1px);
+
+}
+
+.esenario3
+{
+transform: scale(1) rotateX(180deg);
+filter: blur(4px);
+
+}
+footer{
+color: white;
+familia de fuentes: 'Xanh Mono', monoespaciado;
+
+}

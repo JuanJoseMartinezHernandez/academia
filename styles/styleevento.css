@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ font-family:"Gill Sans";
+
+
+}
+.nombre {    display: flex;
+	justify-content: center;
+	position: relative;
+	top: 50px;
+	color: red;
+	font-family: 'Limelight', cursive;
+	font-size: 45PX;
+
+}
+
+h2{
+	display: flex;
+font-family: 'Limelight', cursive;
+color: white;
+justify-content: center;
+position: relative;
+align-items: center;
+top:60px ;
+
+}
+
+header{
+	
+	height: 50px;
+       display: flex;
+	
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 10px;
+	transform: translate(10px);
+
+      }
+
+header div {
+	align-items: center;
+	display: flex;
+
+	
+
+	}
+body{
+background: black;
+
+}
+
+.logo{
+       height: 70px;
+       align-items: center;
+      
+       border-radius: 50px;
+
+      }
+ .logo:hover{
+ box-shadow: 1px 1px 40px white;
+ }
+
+a   	{
+	text-decoration: none;
+	color: white;
+	
+	
+
+
+	}
+
+
+.inicio{
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+
+}
+.boton{
+
+       display: flex;
+	align-items: center;
+	text-align: center;
+	
+
+}
+.boton{
+ 	position: relative;
+       margin: 0, 50px;
+	background: linear-gradient(#00d4ff, #0e0979, #00d4ff);
+	margin-top: 5px;
+	margin-left: 90px;
+
+
+}
+.boton button{
+background: black;/* color de fondo negro  */
+color: white;/*  color de la letra blanco */
+outline: none; /*sin linea*/
+border: none; /*sin bordes*/
+font-size: 30px; /* tamaño de la letra */
+text-transform: none;/* verificar documentacion */
+
+cursor: pointer; /*cuando se acercas el puntero del mause cambia a una mano*/
+z-index: 9;
+margin-top: 18px;
+margin-left: 40px;
+}
+
+.boton{
+
+width: 130px;
+height: 60px;
+border-radius: 50px;
+
+
+
+}
+ .boton button, .boton span{
+
+ 	position: absolute;
+	top: 20%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	margin-top: 18px;
+	margin-left: 40px;
+
+
+ }
+.boton button{
+	height: 56px;
+	width: 120px;
+	border-radius: 50px;
+
+
+}
+
+
+.boton span{
+
+height: 100%;
+width: 100%;
+background: inherit;
+border-radius: 50px;.
+
+
+
+}
+
+
+.boton:hover span:nth-child(1) {
+	filter: blur(10px);
+
+
+}
+.boton:hover span:nth-child(2) {
+	filter: blur(14px);
+
+
+}
+.boton {
+	animation: rotate 1.5s linear infinite;
+
+}
+
+@keyframes rotate{
+
+100%{filter: hue-rotate(360deg);
+
+
+}
+}
+
+.barraNavegacion{
+
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+}
+
+.outer {
+position: relative;
+margin: 0, 50px;
+background: linear-gradient(#00d4ff, #0e0979, #00d4ff);
+justify-content:center ;
+margin-left: 20px;
+
+}
+.contacto, .anecdotas, .historia, .instructores{
+	height: 60px;
+
+	width: 160px;
+	border-radius: 50px;
+
+
+}
+
+.outer button, .outer span{
+
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.outer button{
+
+	background: black;/* color de fondo negro  */
+color: white;/*  color de la letra blanco */
+outline: none; /*sin linea*/
+border: none; /*sin bordes*/
+font-size: 30px; /* tamaño de la letra */
+text-transform: none;/* verificar documentacion */
+
+cursor: pointer; /*cuando se acercas el puntero del mause cambia a una mano*/
+z-index: 9;
+width: 160px;
+height: 55px;
+
+}
+
+
+
+
+
+.contacto, .anecdotas, .historia, .instructores, button{
+
+
+width: 170px;
+height: 60px;
+border-radius: 50px;
+
+
+}
+
+.outer span{
+
+ 	height: 100%;
+	width: 100%;
+	background: inherit;
+
+}
+
+.contacto, .anecdotas, .historia, .instructores, span{
+	border-radius: 50px;
+
+}
+
+.outer:hover span:nth-child(1)  {
+
+	filter: blur(7px);
+}
+.outer:hover span:nth-child(2)
+{
+filter: blur(20px);
+
+}
+
+.outer{
+animation: rotacion linear 1.5s infinite;
+}
+
+@keyframes rotacion
+{
+
+0%{
+filter: hue-rotate(00deg);
+  }
+
+100%{
+filter: hue-rotate(360deg);
+    }
+
+}
+
+.galeria
+{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+
+}
+.frente{
+display: flex;
+
+}
+
+ .tarjeta{
+
+box-shadow: 0 0 15px white;
+width: 350px;
+height: 250px;
+}
+
+.atras{
+display: flex;
+transform: perspective(600px) rotateY(180deg);
+}
+.tarjeta2{
+	
+
+box-shadow: 0 0 15px white;
+width: 350px;
+height: 250px;
+}
