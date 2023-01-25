@@ -7,7 +7,8 @@ box-sizing: border-box;
 
 
 }
-.nombre {    display: flex;
+.nombre {  
+	 display: flex;
 	justify-content: center;
 	position: relative;
 	top: 50px;
@@ -17,21 +18,32 @@ box-sizing: border-box;
 	
 
 }
+@media(max-width:600px){
+
+	.nombre{
+		width: 100%;
+		font-size: 35px;
+	}
+}
+
 
 
 header{
 	
+	
 	height: 50px;
-       display: flex;
+    display: flex;
 	
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 10px;
 	transform: translate(10px);
+	min-width: 230px;
 
       }
 
 header div {
+	
 	align-items: center;
 	display: flex;
 
@@ -67,6 +79,7 @@ a   	{
 
 
 .inicio{
+	
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -91,6 +104,7 @@ a   	{
 
 }
 .boton button{
+	
 background: black;/* color de fondo negro  */
 color: white;/*  color de la letra blanco */
 outline: none; /*sin linea*/
@@ -234,6 +248,15 @@ border-radius: 50px;
 
 }
 
+@media(max-width:600px){
+
+	.contacto,.inicio, .anecdotas, .historia, .instructores, button,.outer button, .outer span
+	{	
+		width: auto;
+		height: auto;
+	}
+}
+
 .outer span{
 
  	height: 100%;
@@ -276,7 +299,7 @@ filter: hue-rotate(360deg);
 
 body img{
 	
-    
+  
 top: 100px;
 
 
@@ -284,26 +307,42 @@ top: 100px;
 }
 
 
+
+
 body div  .contenedor  
 {	
 	
 	display: flex;
 	min-width: 100vh;
-	margin: 0;
+	margin: 0; 
       
-       position: absolute;
+    position: absolute;
 
 }
 
 
 .contenedor 
 {
-	margin-left: 550px;
+	width: 80%;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-left: 55% auto;
 position: relative;
 width: 200px;
 height: 200px;
 transform-style: preserve-3d;
 animation: animacion 30s linear infinite;
+}
+@media(max-width:600px)
+{
+	
+body,.esenario,.esenario2,.esenario3
+{
+	width:100%;
+	height: 100%;
+}
+
+
 }
 
 @keyframes animacion
@@ -526,3 +565,4 @@ color: white;
 familia de fuentes: 'Xanh Mono', monoespaciado;
 
 }
+
